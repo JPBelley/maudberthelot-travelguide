@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Americas — Maud</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface": "#faf9f9", "on-surface": "#1a1c1c",
+          "on-surface-variant": "#4c4546", "outline": "#7e7576",
+          "outline-variant": "#cfc4c5", "primary": "#000000", "on-primary": "#ffffff",
+        },
+        borderRadius: { "DEFAULT":"0px","sm":"0px","md":"0px","lg":"0px","xl":"0px","2xl":"0px","full":"9999px" },
+        spacing: {
+          "unit":"4px","stack-sm":"8px","stack-md":"16px","stack-lg":"32px",
+          "gutter":"24px","margin-mobile":"20px","margin-desktop":"64px","section-gap":"128px",
+        },
+        fontFamily: {
+          "headline-lg":["Newsreader","serif"],"headline-md":["Newsreader","serif"],
+          "body-lg":["Work Sans","sans-serif"],"body-md":["Work Sans","sans-serif"],
+          "label-caps":["Work Sans","sans-serif"],"ui-button":["Work Sans","sans-serif"],
+        },
+        fontSize: {
+          "headline-lg":["48px",{lineHeight:"110%",letterSpacing:"-0.02em",fontWeight:"500"}],
+          "headline-md":["32px",{lineHeight:"120%",letterSpacing:"-0.01em",fontWeight:"500"}],
+          "body-lg":["18px",{lineHeight:"160%",letterSpacing:"0em",fontWeight:"400"}],
+          "body-md":["16px",{lineHeight:"160%",letterSpacing:"0em",fontWeight:"400"}],
+          "label-caps":["12px",{lineHeight:"140%",letterSpacing:"0.1em",fontWeight:"600"}],
+          "ui-button":["14px",{lineHeight:"100%",letterSpacing:"0.02em",fontWeight:"500"}],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
+  * { border-radius: 0 !important; }
+  html { scroll-behavior: smooth; }
+  body { background-color: #faf9f9; color: #1a1c1c; }
+  .ultra-fine-border { border-width: 0.5px; }
+  ::-webkit-scrollbar { width: 2px; }
+  ::-webkit-scrollbar-track { background: #faf9f9; }
+  ::-webkit-scrollbar-thumb { background: #1a1c1c; }
+  .nav-scrolled { border-bottom-color: transparent; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<nav id="nav" class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant transition-all duration-500">
+  <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <a href="index.html" class="font-['Newsreader'] italic text-2xl font-semibold tracking-tight text-primary">Maud</a>
+    <div class="hidden md:flex items-center gap-stack-lg">
+      <a href="patagonia.html" class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300">Patagonia</a>
+      <a href="americas.html"  class="text-primary font-ui-button text-ui-button uppercase tracking-widest border-b border-primary pb-px">Americas</a>
+      <a href="europe.html"    class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300">Europe</a>
+      <a href="about.html"         class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300">About</a>
+      <a href="index.html#contact" class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300">Contact</a>
+    </div>
+    <a href="index.html#contact" class="px-stack-lg py-unit border border-primary text-primary font-ui-button text-ui-button uppercase hover:bg-primary hover:text-on-primary transition-all duration-300">Hire Me</a>
+  </div>
+</nav>
+
+<main class="pt-20">
+
+  <!-- PAGE HEADER -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-stack-lg pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">CUBA · MEXICO · CANADA · USA</span>
+      <span class="font-label-caps text-label-caps text-on-surface">THE AMERICAS</span>
+    </div>
+    <h1 class="font-['Newsreader'] font-semibold leading-none mb-section-gap"
+        style="font-size:clamp(48px,7vw,100px);letter-spacing:-0.04em;line-height:0.97;">
+      Colour, rhythm<br>and wide open<br><em>sky.</em>
+    </h1>
+
+    <!-- ─── CUBA ─────────────────────────────────── -->
+    <div id="cuba" class="scroll-mt-20">
+      <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+        <span class="font-label-caps text-label-caps text-on-surface-variant">CUBA — HAVANA</span>
+      </div>
+
+      <div class="grid grid-cols-12 gap-gutter items-start">
+        <!-- Large portrait -->
+        <div class="col-span-12 md:col-span-6">
+          <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:2/3;">
+            <img src="img/compressed/IMG_0899.avif" alt="Maud sitting in front of a vivid red ornate colonial door, Havana Cuba"
+                 class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+          </div>
+          <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">OLD HAVANA</span>
+        </div>
+        <!-- Right content -->
+        <div class="col-span-12 md:col-span-6 flex flex-col gap-stack-lg py-stack-lg">
+          <h2 class="font-['Newsreader'] font-medium leading-tight"
+              style="font-size:clamp(32px,3.5vw,48px);letter-spacing:-0.02em;line-height:1.08;">
+            <em>Red doors</em> and<br>a city out of time.
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Havana moves at its own speed. The colours are louder than you expect, the music starts earlier and ends later, and every doorway opens onto a story you didn't know you needed to hear.
+          </p>
+          <div class="grid grid-cols-2 gap-gutter">
+            <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:1/1;">
+              <img src="img/compressed/IMG_0892.avif" alt="Maud against painted red floral door, Cuba"
+                   class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+            </div>
+            <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:1/1;">
+              <img src="img/compressed/IMG_7973.avif" alt="Aerial view, ornate iron door, Cuba"
+                   class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAUSE -->
+  <div class="h-section-gap flex items-center justify-center"><div class="w-px h-16 bg-outline-variant"></div></div>
+
+  <!-- ─── MEXICO ───────────────────────────────────── -->
+  <section id="mexico" class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap scroll-mt-20">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">MEXICO — MÉRIDA</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+      <div class="col-span-12 md:col-span-5 flex flex-col gap-stack-lg">
+        <h2 class="font-['Newsreader'] font-medium leading-tight"
+            style="font-size:clamp(32px,3.5vw,48px);letter-spacing:-0.02em;line-height:1.08;">
+          The White City<br>of the <em>Yucatán.</em>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Mérida is one of Mexico's best-kept secrets. Colonial architecture, Mayan heritage, and a food scene that will rearrange your priorities. The kind of city where a walk around the main square becomes a three-hour conversation.
+        </p>
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:4/3;">
+          <img src="img/compressed/IMG_8054.avif" alt="Maud in red outfit with tropical flowers, Mexico"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant">MÉRIDA, YUCATÁN</span>
+      </div>
+      <div class="col-span-12 md:col-span-7">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:4/3;">
+          <img src="img/compressed/IMG_8006.avif" alt="Mérida sign with cathedral and Mexican flag"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">PLAZA GRANDE · MÉRIDA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAUSE -->
+  <div class="h-section-gap flex items-center justify-center"><div class="w-px h-16 bg-outline-variant"></div></div>
+
+  <!-- ─── CANADA & USA ─────────────────────────────── -->
+  <section id="canada" class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap scroll-mt-20">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">WEST CANADA & UNITED STATES</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+      <!-- Full width Canada landscape -->
+      <div class="col-span-12">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:21/9;">
+          <img src="img/compressed/IMG_3124.avif" alt="Mountain river with boulders and evergreen forest, British Columbia"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">BRITISH COLUMBIA, CANADA</span>
+      </div>
+
+      <!-- Two columns below -->
+      <div class="col-span-12 md:col-span-8 flex flex-col gap-stack-lg mt-gutter">
+        <h2 class="font-['Newsreader'] font-medium leading-tight"
+            style="font-size:clamp(32px,3.5vw,48px);letter-spacing:-0.02em;line-height:1.08;">
+          The vast, unhurried<br><em>north.</em>
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          West Canada is scale made visible. Rivers that have been carving the same canyon for ten thousand years. Mountain passes where the only traffic is bighorn sheep. It's the kind of landscape that puts your problems in perspective instantly.
+        </p>
+      </div>
+      <div class="col-span-12 md:col-span-4 mt-gutter">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:4/3;">
+          <img src="img/compressed/IMG_1684.avif" alt="Bighorn sheep crossing road in open prairie under storm sky"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">BADLANDS · USA</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAUSE -->
+  <div class="h-section-gap flex items-center justify-center"><div class="w-px h-16 bg-outline-variant"></div></div>
+
+  <!-- ─── CHILE (WINERY) ─────────────────────────────── -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">CHILE — WINE VALLEY</span>
+    </div>
+    <div class="grid grid-cols-12 gap-gutter items-center">
+      <div class="col-span-12 md:col-span-7">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio:4/3;">
+          <img src="img/compressed/IMG_0961.avif" alt="Maud in a lush vineyard garden, Chile"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">CHILEAN WINE COUNTRY</span>
+      </div>
+      <div class="col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-stack-lg">
+        <h2 class="font-['Newsreader'] font-medium leading-tight"
+            style="font-size:clamp(28px,3vw,40px);letter-spacing:-0.02em;line-height:1.1;">
+          The other side<br>of <em>Chile.</em>
+        </h2>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+          Beyond the glaciers and the peaks, Chile's central valleys produce some of the world's finest wines. A completely different pace — lush, warm, and fragrant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAV -->
+  <div class="border-t border-outline-variant">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex justify-between items-center">
+      <a href="patagonia.html" class="inline-flex items-center gap-unit font-ui-button text-ui-button text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors duration-300">
+        <span class="material-symbols-outlined" style="font-size:14px;">arrow_back</span>
+        Patagonia
+      </a>
+      <a href="europe.html" class="inline-flex items-center gap-unit font-ui-button text-ui-button text-on-surface-variant uppercase tracking-widest hover:text-primary transition-colors duration-300">
+        Europe
+        <span class="material-symbols-outlined" style="font-size:14px;">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full border-t border-outline-variant bg-surface">
+  <div class="flex flex-col md:flex-row justify-between items-center py-stack-lg px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <a href="index.html" class="font-['Newsreader'] italic text-xl font-semibold text-primary mb-stack-md md:mb-0">Maud</a>
+    <div class="flex flex-col md:flex-row gap-stack-md items-center mb-stack-md md:mb-0">
+      <a href="patagonia.html" class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all">Patagonia</a>
+      <a href="americas.html"  class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all">Americas</a>
+      <a href="europe.html"    class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all">Europe</a>
+      <a href="index.html#about"   class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all">About</a>
+      <a href="index.html#contact" class="text-on-surface-variant font-label-caps text-label-caps hover:text-primary transition-all">Contact</a>
+    </div>
+    <div class="text-on-surface-variant font-label-caps text-label-caps">© 2025 MAUD. ALL RIGHTS RESERVED.</div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav-scrolled', window.scrollY > 80);
+  }, { passive: true });
+</script>
+</body>
+</html>
