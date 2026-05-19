@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Expérience — Maud</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface": "#faf9f9", "on-surface": "#1a1c1c",
+          "on-surface-variant": "#4c4546", "outline": "#7e7576",
+          "outline-variant": "#cfc4c5", "primary": "#000000", "on-primary": "#ffffff",
+        },
+        borderRadius: { "DEFAULT":"0px","sm":"0px","md":"0px","lg":"0px","xl":"0px","2xl":"0px","full":"9999px" },
+        spacing: {
+          "unit":"4px","stack-sm":"8px","stack-md":"16px","stack-lg":"32px",
+          "gutter":"24px","margin-mobile":"20px","margin-desktop":"64px","section-gap":"128px",
+        },
+        fontFamily: {
+          "headline-lg":["Newsreader","serif"],"headline-md":["Newsreader","serif"],
+          "body-lg":["Work Sans","sans-serif"],"body-md":["Work Sans","sans-serif"],
+          "label-caps":["Work Sans","sans-serif"],"ui-button":["Work Sans","sans-serif"],
+        },
+        fontSize: {
+          "headline-lg":["48px",{lineHeight:"110%",letterSpacing:"-0.02em",fontWeight:"500"}],
+          "headline-md":["32px",{lineHeight:"120%",letterSpacing:"-0.01em",fontWeight:"500"}],
+          "body-lg":["18px",{lineHeight:"160%",letterSpacing:"0em",fontWeight:"400"}],
+          "body-md":["16px",{lineHeight:"160%",letterSpacing:"0em",fontWeight:"400"}],
+          "label-caps":["12px",{lineHeight:"140%",letterSpacing:"0.1em",fontWeight:"600"}],
+          "ui-button":["14px",{lineHeight:"100%",letterSpacing:"0.02em",fontWeight:"500"}],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24; }
+  * { border-radius: 0 !important; }
+  html { scroll-behavior: smooth; }
+  body { background-color: #faf9f9; color: #1a1c1c; }
+  .ultra-fine-border { border-width: 0.5px; }
+  ::-webkit-scrollbar { width: 2px; }
+  ::-webkit-scrollbar-track { background: #faf9f9; }
+  ::-webkit-scrollbar-thumb { background: #1a1c1c; }
+  .nav-scrolled { border-bottom-color: transparent; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- NAV -->
+<nav id="nav" class="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant transition-all duration-500">
+  <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
+    <a href="index.html" class="font-['Newsreader'] italic text-2xl font-semibold tracking-tight text-primary">Maud</a>
+    <div class="hidden md:flex items-center gap-stack-lg">
+      <a href="experience.html" class="text-primary font-ui-button text-ui-button uppercase tracking-widest border-b border-primary pb-px">Expérience</a>
+      <a href="index.html#contact" class="text-on-surface-variant font-ui-button text-ui-button uppercase tracking-widest hover:text-primary transition-colors duration-300">Contact</a>
+    </div>
+    <a href="index.html#contact" class="px-stack-lg py-unit border border-primary text-primary font-ui-button text-ui-button uppercase hover:bg-primary hover:text-on-primary transition-all duration-300">Engagez-moi</a>
+  </div>
+</nav>
+
+<main class="pt-20">
+
+  <!-- OPENING -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pt-stack-lg pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">EXPÉRIENCE</span>
+      <span class="font-label-caps text-label-caps text-on-surface">GÉOGRAPHE · GUIDE · EXPLORATRICE</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+
+      <!-- Portrait -->
+      <div class="col-span-12 md:col-span-5">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 3/4;">
+          <img src="img/compressed/20241021-DSC09525-2.avif"
+               alt="Maud souriante au bord de la Méditerranée"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">
+          CADAQUÈS · ESPAGNE · 2024
+        </span>
+      </div>
+
+      <!-- Opening statement -->
+      <div class="col-span-12 md:col-span-6 md:col-start-7 flex flex-col justify-center gap-stack-lg py-stack-lg">
+        <h1 class="font-['Newsreader'] font-medium"
+            style="font-size: clamp(40px, 4.5vw, 64px); letter-spacing: -0.02em; line-height: 1.05;">
+          Géographe.<br><em>Guide.</em><br>Amoureuse des territoires.
+        </h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Je suis géographe, guide et grande amoureuse des territoires — ceux que l'on étudie, mais surtout ceux que l'on <em>ressent</em>.
+        </p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Rigoureuse dans la planification, souple dans l'exécution : je crois que les meilleures expériences naissent d'une préparation solide et d'une capacité à s'adapter à l'inattendu. C'est cette combinaison que j'apporte à chaque engagement, qu'il soit sur le terrain ou en coulisses.
+        </p>
+        <div class="border-t border-outline-variant pt-stack-lg">
+          <span class="font-label-caps text-label-caps text-on-surface-variant block mb-stack-sm">DESTINATIONS VISITÉES</span>
+          <p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Ouest canadien · États-Unis · Honduras · Espagne · France · Pays-Bas · Belgique · Italie · Cuba · Mexique · Argentine · Chili · Royaume-Uni · Croatie · Monténégro · Turquie · Malaisie · Australie.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4 QUALITÉS -->
+  <section class="border-y border-outline-variant py-section-gap mb-section-gap">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+        <span class="font-label-caps text-label-caps text-on-surface-variant">CE QUE J'APPORTE</span>
+      </div>
+      <div class="grid grid-cols-12 gap-gutter">
+
+        <div class="col-span-12 md:col-span-3 border-t border-primary pt-stack-lg flex flex-col gap-stack-md">
+          <h3 class="font-['Newsreader'] italic font-medium text-3xl">Organisation</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            De la logistique d'un tour du monde en solitaire à la coordination de visites guidées dans des institutions publiques, j'ai développé une capacité à structurer les opérations avec précision, sans jamais perdre de vue l'expérience humaine au cœur de chaque projet.
+          </p>
+        </div>
+
+        <div class="col-span-12 md:col-span-3 border-t border-primary pt-stack-lg flex flex-col gap-stack-md">
+          <h3 class="font-['Newsreader'] italic font-medium text-3xl">Planification</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Planifier un itinéraire à travers six pays en deux mois n'est pas qu'une question de réservations — c'est anticiper, ajuster, prévoir les alternatives. J'aborde chaque mandat de guide avec la même rigueur : des programmes pensés dans le détail, pour que rien ne soit laissé au hasard.
+          </p>
+        </div>
+
+        <div class="col-span-12 md:col-span-3 border-t border-primary pt-stack-lg flex flex-col gap-stack-md">
+          <h3 class="font-['Newsreader'] italic font-medium text-3xl">Résilience</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Quitter sa province à 18 ans, naviguer seule dans des pays inconnus, s'adapter à des groupes, des langues et des contextes très différents — la résilience s'est construite voyage après voyage. Elle se manifeste aujourd'hui dans ma capacité à rester calme, centrée et efficace face à l'imprévu.
+          </p>
+        </div>
+
+        <div class="col-span-12 md:col-span-3 border-t border-primary pt-stack-lg flex flex-col gap-stack-md">
+          <h3 class="font-['Newsreader'] italic font-medium text-3xl">Versatilité</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Guide institutionnelle, naturaliste, animatrice, coordinatrice, personal shopper — mon parcours couvre des univers radicalement différents. Cette versatilité me permet de m'adapter à n'importe quel public, format ou contexte, tout en maintenant un niveau d'excellence constant.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LES DÉBUTS -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">LES DÉBUTS</span>
+      <span class="font-label-caps text-label-caps text-on-surface">COLOMBIE-BRITANNIQUE · 18 ANS</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+
+      <div class="col-span-12 md:col-span-6 flex flex-col gap-stack-lg">
+        <h2 class="font-['Newsreader'] font-medium"
+            style="font-size: clamp(30px, 3vw, 44px); letter-spacing: -0.02em; line-height: 1.1;">
+          Partir seule à 18 ans, dans une nouvelle langue, m'a appris qu'on est plus résiliente qu'on ne le croit.
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Mon désir de voyager a commencé à 18 ans, quand j'ai quitté ma province pour passer un an en Colombie-Britannique. Sans réseau établi, dans une langue encore à apprivoiser, face aux montagnes de l'Ouest canadien — j'ai découvert que l'inconfort est souvent le meilleur professeur, et que s'organiser dans l'inconnu est une compétence qui se cultive.
+        </p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Depuis, les voyages ont façonné ma vie autant que mon parcours professionnel — l'un renforçant constamment l'autre.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-5 md:col-start-8">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 3/4;">
+          <img src="img/compressed/IMG_3124.avif"
+               alt="Nature sauvage des Rocheuses, Canada"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">
+          CANADA · CÔTE OUEST
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section class="border-y border-outline-variant py-section-gap mb-section-gap">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <blockquote class="font-['Newsreader'] font-medium text-center mx-auto"
+                  style="font-size: clamp(28px, 3.5vw, 52px); letter-spacing: -0.02em; line-height: 1.15; max-width: 900px;">
+        <em>« La meilleure planification est celle qui reste invisible — celle qui libère les gens pour qu'ils vivent pleinement. »</em>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- LES TERRITOIRES -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">LES TERRITOIRES</span>
+      <span class="font-label-caps text-label-caps text-on-surface">MONDE · 2018 – PRÉSENT</span>
+    </div>
+
+    <!-- Top: full landscape -->
+    <div class="overflow-hidden cursor-crosshair group mb-gutter" style="aspect-ratio: 21/9;">
+      <img src="img/compressed/DSC06338-Enhanced-NR.avif"
+           alt="Torres del Paine, Patagonie"
+           class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+    </div>
+    <span class="font-label-caps text-label-caps text-on-surface-variant mb-stack-lg block">TORRES DEL PAINE · PATAGONIE</span>
+
+    <div class="grid grid-cols-12 gap-gutter items-start mt-stack-lg">
+
+      <div class="col-span-12 md:col-span-5 flex flex-col gap-stack-lg">
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          J'ai exploré les vastes espaces de l'Ouest américain, la Patagonie chilienne et argentine, les villes andalouses, l'Italie, Amsterdam, Singapour, le Mexique — et bien d'autres endroits qui m'ont marquée autant pour leurs paysages que pour leur identité culturelle.
+        </p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Chaque voyage a demandé une organisation différente : grands espaces sauvages, villes denses, itinéraires solo, groupes. Cette diversité de contextes a forgé une adaptabilité réelle, et une compréhension fine de ce que chaque type d'environnement exige — du voyageur comme du guide.
+        </p>
+      </div>
+
+      <div class="col-span-12 md:col-span-6 md:col-start-7">
+        <div class="grid grid-cols-2 gap-gutter">
+          <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 3/4;">
+            <img src="img/compressed/IMG_1660.avif"
+                 alt="Guanaco, Patagonie"
+                 class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+          </div>
+          <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 3/4;">
+            <img src="img/compressed/IMG_0892.avif"
+                 alt="Architecture coloniale, Cuba"
+                 class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+          </div>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">
+          PATAGONIE · CUBA
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOUR DU MONDE EN SOLITAIRE -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">TOUR DU MONDE EN SOLITAIRE</span>
+      <span class="font-label-caps text-label-caps text-on-surface">LONDRES → MALAISIE · DEUX MOIS</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+
+      <!-- Images -->
+      <div class="col-span-12 md:col-span-7">
+        <div class="overflow-hidden cursor-crosshair group mb-gutter" style="aspect-ratio: 16/9;">
+          <img src="img/compressed/IMG_1513.avif"
+               alt="Côte adriatique au coucher du soleil, Croatie"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <div class="grid grid-cols-2 gap-gutter">
+          <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 4/3;">
+            <img src="img/compressed/IMG_1819.avif"
+                 alt="Tours Petronas la nuit, Kuala Lumpur, Malaisie"
+                 class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+          </div>
+          <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 4/3;">
+            <img src="img/compressed/IMG_3049.avif"
+                 alt="Opéra de Sydney, Australie"
+                 class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+          </div>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">
+          CROATIE · KUALA LUMPUR · SYDNEY
+        </span>
+      </div>
+
+      <!-- Text -->
+      <div class="col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-stack-lg py-stack-lg">
+        <h2 class="font-['Newsreader'] font-medium"
+            style="font-size: clamp(28px, 2.8vw, 40px); letter-spacing: -0.02em; line-height: 1.15;">
+          Deux mois, six pays, seule — une <em>planification</em> au millimètre pour une liberté totale.
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          De Londres à la Malaisie, en passant par la Croatie, le Monténégro, Istanbul et l'Australie — chaque étape a exigé une logistique précise : hébergements, transports, visas, budgets, plans de rechange. L'organisation n'était pas une contrainte, c'était ce qui rendait l'aventure possible.
+        </p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Ce voyage m'a aussi confrontée à des imprévus de toutes sortes. Y faire face seule a consolidé une résilience que je retrouve aujourd'hui dans mon travail : la capacité à rester calme, à trouver des solutions et à transformer un obstacle en opportunité d'expérience.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE PROFESSIONNELLE -->
+  <section class="border-t border-outline-variant py-section-gap mb-section-gap">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+      <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+        <span class="font-label-caps text-label-caps text-on-surface-variant">EXPÉRIENCE PROFESSIONNELLE</span>
+        <span class="font-label-caps text-label-caps text-on-surface">LA GUIDE DERRIÈRE L'OBJECTIF</span>
+      </div>
+
+      <div class="grid grid-cols-12 gap-gutter">
+
+        <div class="col-span-12 md:col-span-4 flex flex-col gap-stack-lg">
+          <h2 class="font-['Newsreader'] font-medium"
+              style="font-size: clamp(28px, 2.8vw, 40px); letter-spacing: -0.02em; line-height: 1.15;">
+            Guide dans tous les sens du terme.
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Mon parcours professionnel couvre des milieux radicalement différents — institutions publiques, nature sauvage, événements, mode. Cette versatilité n'est pas le fruit du hasard : elle reflète une curiosité authentique et une capacité à exceller dans des contextes variés, en apportant chaque fois le même niveau d'organisation et d'attention au détail.
+          </p>
+        </div>
+
+        <div class="col-span-12 md:col-span-7 md:col-start-6">
+          <div class="flex flex-col divide-y divide-outline-variant">
+
+            <div class="py-stack-lg">
+              <div class="flex justify-between items-start mb-stack-sm">
+                <span class="font-label-caps text-label-caps text-primary">GUIDE BILINGUE</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">QUÉBEC</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Assemblée nationale du Québec — animation de visites bilingues rigoureusement préparées, adaptées à des publics très variés (scolaires, touristes, dignitaires). Chaque visite demandait une planification précise du contenu, du rythme et des transitions.
+              </p>
+            </div>
+
+            <div class="py-stack-lg">
+              <div class="flex justify-between items-start mb-stack-sm">
+                <span class="font-label-caps text-label-caps text-primary">GUIDE NATURALISTE</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">QUÉBEC</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Parc de la Rivière des Mille Îles et Commission de la capitale nationale — interprétation du patrimoine naturel et historique. Un contexte où la résilience et l'adaptabilité sont essentielles : météo changeante, groupes imprévisibles, terrain variable.
+              </p>
+            </div>
+
+            <div class="py-stack-lg">
+              <div class="flex justify-between items-start mb-stack-sm">
+                <span class="font-label-caps text-label-caps text-primary">EXPÉRIENCE CLIENT & COORDINATION</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">DIVERS</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Plusieurs années en service à la clientèle, animation et coordination — des rôles qui exigent organisation, gestion de l'énergie d'un groupe et sens aigu de l'anticipation. Chaque contexte a renforcé ma capacité à orchestrer une expérience de bout en bout.
+              </p>
+            </div>
+
+            <div class="py-stack-lg">
+              <div class="flex justify-between items-start mb-stack-sm">
+                <span class="font-label-caps text-label-caps text-primary">MODE & PERSONAL SHOPPING</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">DIVERS</span>
+              </div>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Un univers qui a aiguisé mon sens du détail, mon esthétique et mon approche du service personnalisé — compétences directement transférables au guidage, où la finesse d'observation et l'écoute du client font toute la différence.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CE QUI M'ANIME -->
+  <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop pb-section-gap">
+    <div class="flex justify-between items-end border-b border-outline-variant pb-stack-sm mb-stack-lg">
+      <span class="font-label-caps text-label-caps text-on-surface-variant">CE QUI M'ANIME</span>
+    </div>
+
+    <div class="grid grid-cols-12 gap-gutter items-start">
+
+      <div class="col-span-12 md:col-span-5">
+        <div class="overflow-hidden cursor-crosshair group" style="aspect-ratio: 3/4;">
+          <img src="img/compressed/20241020-DSC09446-Enhanced-NR.avif"
+               alt="Maud devant une mosaïque, Turquie"
+               class="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out"/>
+        </div>
+        <span class="font-label-caps text-label-caps text-on-surface-variant mt-stack-sm block">
+          ISTANBUL · TURQUIE · 2024
+        </span>
+      </div>
+
+      <div class="col-span-12 md:col-span-6 md:col-start-7 flex flex-col gap-stack-lg py-stack-lg">
+        <h2 class="font-['Newsreader'] font-medium"
+            style="font-size: clamp(30px, 3vw, 44px); letter-spacing: -0.02em; line-height: 1.1;">
+          J'aime les musées autant que les marchés. Les cafés européens autant que les grands paysages isolés.
+        </h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Les territoires de montagne restent ceux qui me touchent le plus profondément. Il y a quelque chose dans l'échelle, le silence et l'humilité que les montagnes imposent — c'est là où je me sens le plus vivante et le plus attentive.
+        </p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">
+          Au fond, ce qui m'anime le plus, c'est l'expérience humaine du voyage : raconter, accompagner, créer une atmosphère et faire en sorte qu'un lieu laisse une empreinte durable.
+        </p>
+
+        <!-- Dream destinations -->
+        <div class="border-t border-outline-variant pt-stack-lg mt-stack-sm">
+          <span class="font-label-caps text-label-caps text-on-surface-variant block mb-stack-md">ENCORE À DÉCOUVRIR</span>
+          <div class="grid grid-cols-2 gap-gutter">
+            <div class="border-t border-primary pt-stack-sm">
+              <span class="font-['Newsreader'] italic text-xl font-medium block">Islande</span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant">Feu & Glace</span>
+            </div>
+            <div class="border-t border-primary pt-stack-sm">
+              <span class="font-['Newsreader'] italic text-xl font-medium block">Antarctique</span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant">Le Dernier Wilderness</span>
+            </div>
+            <div class="border-t border-primary pt-stack-sm">
+              <span class="font-['Newsreader'] italic text-xl font-medium block">Japon</span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant">Ancien & Contemporain</span>
+            </div>
+            <div class="border-t border-primary pt-stack-sm">
+              <span class="font-['Newsreader'] italic text-xl font-medium block">Kazakhstan</span>
+              <span class="font-label-caps text-label-caps text-on-surface-variant">Steppe & Route de la Soie</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="border-t border-outline-variant py-section-gap">
+    <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop text-center">
+      <span class="font-label-caps text-label-caps text-on-surface-variant block mb-stack-lg">PRÊT À EXPLORER ?</span>
+      <h2 class="font-['Newsreader'] font-medium mx-auto mb-stack-lg"
+          style="font-size: clamp(32px, 4vw, 56px); letter-spacing: -0.02em; line-height: 1.1; max-width: 700px;">
+        Créons ensemble une expérience qui laisse sa marque.
+      </h2>
+      <a href="index.html#contact"
+         class="inline-flex items-center gap-stack-sm px-stack-lg py-stack-md bg-primary text-on-primary font-ui-button text-ui-button uppercase tracking-widest hover:opacity-80 transition-opacity duration-300">
+        Me contacter
+        <span class="material-symbols-outlined" style="font-size: 14px;">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-outline-variant py-stack-lg">
+  <div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start md:items-center gap-stack-md">
+    <a href="index.html" class="font-['Newsreader'] italic text-xl font-semibold tracking-tight text-primary">Maud</a>
+    <span class="font-label-caps text-label-caps text-on-surface-variant">GÉOGRAPHE · GUIDE · EXPLORATRICE</span>
+    <div class="flex gap-stack-lg">
+      <a href="patagonia.html" class="font-ui-button text-ui-button text-on-surface-variant uppercase hover:text-primary transition-colors duration-300">Patagonie</a>
+      <a href="americas.html"  class="font-ui-button text-ui-button text-on-surface-variant uppercase hover:text-primary transition-colors duration-300">Amériques</a>
+      <a href="europe.html"    class="font-ui-button text-ui-button text-on-surface-variant uppercase hover:text-primary transition-colors duration-300">Europe</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
+
+</body>
+</html>
